@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Pemandangan</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <h1>Wisata My Faforit</h1>
+        <nav class="navbar-nav">
+            <a href="#home"><i data-feather="home"></i> Home</a>
+            <a href="#contact"><i data-feather="mail"></i> Kontak</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="destinations">
+        <h2>Destinasi Favorit</h2>
+        <a href="pantai.html" target="_blank" class="destination">
+            <img src="./Foto/pantai.webp" alt="Pantai">
+            <h3>Pantai Karang Bolong</h3>
+        </a>
+        <a href="gunung.html" target="_blank" class="destination">
+            <img src="./Foto/prau.jpg" alt="Gunung">
+            <h3>Gunung Prau Dieng Wonosobo</h3>
+        </a>
+    </section>
+
+    <section id="gallery">
+        <h2>Galeri Multimedia</h2>
+        <div id="media-list">
+            
+        </div>
+    </section>
+
+    <section id="upload">
+        <h2>Unggah Dokumen dan Multimedia</h2>
+        <form id="upload-form">
+            <label for="file-upload">Pilih File:</label>
+            <input type="file" id="file-upload" multiple accept="image/*">
+            <button type="button" id="upload-btn">Unggah</button>
+        </form>
+    </section>
+</main>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2><span>Kontak</span> Kami</h2>
+    <p>Hubungi kami untuk informasi lebih lanjut mengenai wisata pemandangan terbaik!</p>
+
+    <div class="row">
+        <!-- Iframe diatur agar berada di tengah -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15862.058673618532!2d106.8544173871582!3d-6.327287099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed55762e6ef3%3A0xa97e400de00868b7!2sKandangtembakau!5e0!3m2!1sid!2sid!4v1686533157446!5m2!1sid!2sid"
+            allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="">
+            <div class="input-group">
+                <i data-feather="user"></i>
+                <input type="text" placeholder="Nama">
+            </div>
+            <div class="input-group">
+                <i data-feather="mail"></i>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <i data-feather="phone"></i>
+                <input type="text" placeholder="Nomor Handphone">
+            </div>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </div>
+</section>
+
+
+<footer>
+    <div class="sosials">
+        <a href="https://www.instagram.com/sadamzulklifar/"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+    </div>
+    <div class="credit">
+        <p>Created by <a href="#">Sadam Zulklifar</a> | &copy; 2023.</p>
+    </div>
+</footer>
+
+<script src="./JS/script.js"></script>
+<script>feather.replace()</script>
+
+</body>
+</html>

@@ -1,0 +1,351 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f0f8ff;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #48c6ef;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+#destinations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination {
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.destination:hover {
+    transform: scale(1.05);
+}
+
+#details {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background: #48c6ef;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* CSS tetap sama, dengan tambahan sedikit untuk elemen baru */
+#gallery, #upload {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#media-list img, #media-list video {
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#uploaded-files {
+    margin-top: 20px;
+}
+
+#file-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#file-list li {
+    background: #e3e3e3;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+
+
+
+/* Struktur dasar untuk body dan footer */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f0f8ff;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Agar konten dan footer tersusun secara vertikal */
+    min-height: 100vh; /* Minimal tinggi layar penuh */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #48c6ef;
+    color: white;
+}
+
+main {
+    flex: 1; /* Konten utama akan mengambil sisa ruang */
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background:#48c6ef;
+    color:darkgreen;
+    position: relative; /* Tidak mengambang di atas konten */
+    width: 100%;
+}
+
+
+/*CSS Pantai*/
+
+
+
+video {
+    width: 95%;
+    height: auto;
+    
+    align-items: center;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.back-button:hover {
+    background-color: darkgreen;
+}
+
+
+/*Kontak*/
+.contact {
+    padding: 8rem 7% 1.4rem;
+  }
+.contact h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.contact h2 {
+    margin-bottom: 1rem
+}
+
+.contact p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+  }
+
+  .contact .row {
+	display: flex;
+	margin-top: 2rem;
+	background-color: #222;
+  }
+  
+  .contact .row .map {
+	flex: 1 1 45rem;
+	width: 100%;
+	object-fit: cover;
+    
+  }
+  
+  .contact .row form {
+	flex: 1 1 45rem;
+	padding: 5rem 2rem;
+	text-align: center;
+  }
+  
+  .contact .row form .input-group {
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+	background-color: darkgray;
+	padding-left: 2rem;
+  }
+  
+  .contact .row form .input-group input {
+	width: 100%;
+	padding: 1rem;
+	font-size: 1.7rem;
+	background: none;
+	color: #fff;
+  }
+  
+  .contact .row form .btn {
+	margin-top: 2rem;
+	display: inline-block;
+	padding: 1rem 3rem;
+	font-size: 1.7rem;
+	color: #fff;
+	background-color: darkblue;
+	cursor: pointer;
+  }
+
+
+ /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:aqua; /* Hijau alami */
+            padding: 10px 20px;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar-nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .navbar-nav a:hover {
+            background-color: #45a049; /* Warna hover */
+            color: #fff;
+        }
+
+        .navbar h1 {
+            color: white;
+            font-size: 1.5em;
+        }
+
+        /* Contact styling */
+        .contact {
+            padding: 40px 20px;
+            background-color: #f8f8f8;
+            border-top: 3px solid #4CAF50;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #4CAF50;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .contact .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        iframe {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        form {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .input-group {
+            position: relative;
+        }
+
+        .input-group i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px 10px 10px 35px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input-group input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .contact .row iframe {
+            display: block;        
+            margin: 80px auto;      
+            border: none;          
+            max-width: 600px;      
+            height: 400px;          
+            border-radius: 10px;   
+        }
+        
+
+
+    
+
+
+
+
+        
